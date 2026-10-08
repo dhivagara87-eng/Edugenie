@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduGenie - Gemini Learning Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">🎓</div>
+        <div>
+          <h1>EduGenie</h1>
+          <p>AI Learning Assistant</p>
+        </div>
+      </div>
+
+      <label class="field-label">Choose Module</label>
+      <select id="moduleSelect" class="control">
+        <option>AI Chat & Doubt Solver</option>
+        <option>Notes Summarizer</option>
+        <option>Question Generator</option>
+        <option>AI Quiz Hub</option>
+        <option>Study Planner</option>
+        <option>Progress Tracking</option>
+      </select>
+
+      <label class="field-label">Difficulty</label>
+      <select id="levelSelect" class="control">
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+
+      <div class="api-status" id="apiStatus">Checking Gemini...</div>
+
+      <div class="sidebar-footer">
+        <span>Powered by Google Gemini</span>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div>
+          <span class="eyebrow">Google Gemini Powered</span>
+          <h2 id="pageTitle">AI Tutor & Doubt Solver</h2>
+        </div>
+        <div class="xp-pill">⭐ <span id="xpValue">0</span> XP</div>
+      </header>
+
+      <section id="content"></section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
